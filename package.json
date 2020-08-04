@@ -1,7 +1,7 @@
 {
-  "name": "excel-course",
+  "name": "car-loan-calculator",
   "version": "1.0.0",
-  "description": "Pure JavaScript Excel Application",
+  "description": "Pure JavaScript Car Loan Calculator",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,19 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vladilenm/excel-course.git"
+    "url": "git+https://github.com/nuffyweb/car-loan-calculator.git"
   },
   "keywords": [
     "js",
     "javascript",
-    "excel"
+    "calculator"
   ],
-  "author": "Vladilen Minin <vladilen.minin@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vladilenm/excel-course/issues"
-  },
-  "homepage": "https://github.com/vladilenm/excel-course#readme",
+  "author": "Marine Ro <dexykiz@yahoo.com>",
+  "homepage": "https://github.com/nuffyweb/car-loan-calculator#readme",
   "private": true,
   "browserslist": "> 0.25%, not dead",
   "devDependencies": {
