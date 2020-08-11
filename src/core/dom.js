@@ -17,7 +17,15 @@ class Dom {
         this.html('')
         return this
     }
-
+    find(selector) {
+        return $(this.$el.querySelector(selector))
+      }
+      get data() {
+        return this.$el.dataset
+      }
+      get elem() {
+        return this.$el
+      }
     on(eventType, callback) {
         this.$el.addEventListener(eventType, callback)
     }
@@ -39,6 +47,16 @@ class Dom {
 
         return this
     }
+    closest(selector) {
+        return $(this.$el.closest(selector))
+      }
+    addClass(className) {
+        this.$el.classList.add(className)
+      }
+
+      removeClass(className) {
+        this.$el.classList.remove(className)
+      }
 }
 
 // event.target

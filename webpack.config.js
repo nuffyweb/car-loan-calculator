@@ -59,7 +59,7 @@ module.exports = {
             },
             {
                 from: path.resolve(__dirname, 'src/images'),
-                to: path.resolve(__dirname, 'dist')
+                to: path.resolve(__dirname, 'dist/images')
             },
         ]),
         new MiniCssExtractPlugin({
@@ -89,10 +89,17 @@ module.exports = {
                     {
                         loader: 'image-webpack-loader',
                         options: {
-                            outputPath: 'images',
+                            outputPath: '/images',
                         },
                     },
                 ],
+            },
+            {
+                test: /\.json$/,
+                exclude: /node_modules/,
+                use: [
+                    'file-loader',
+                ]
             },
             {
                 test: /\.js$/,
